@@ -1,4 +1,4 @@
-name = input("Enter your name: ")
+name = input("Enter your name:")
 height = float(input("Enter your HEIGHT :"))
 while True:
     try:
@@ -8,7 +8,7 @@ while True:
         else:
             print("Age must be positive!")
     except ValueError:
-        print("Please enter a valid number!")
+        print("Please enter a valid nu!")
 
 print(f"Hello, {name}!")
 print(f"You are {age} years old and {height} meters tall.")
