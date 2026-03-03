@@ -1,6 +1,6 @@
 
-x = 2
-y = 5
+x = 20
+y = 50
 
 print ("tambah =" , (x + y))
 print ("darab =", (x * y))
