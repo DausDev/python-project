@@ -40,6 +40,16 @@ student = {
 student["grade"] = "C"  # Update grade
 student["study method"] = "online bootcamp- jomhack" # Add new key-value pair
 
-print(student["name"])  # Output: Firdaus
-print(student.get("courses")) # Output: ['Python', 'LINUX', 'micro python']
-print(student ["study method"]) # This will raise a KeyError since "study method" does not exist in the dictionary
+# print(student["name"])  # Output: Firdaus
+# print(student.get("courses")) # Output: ['Python', 'LINUX', 'micro python']
+# print(student.get("study method")) # Output: online bootcamp- jomhack
+
+# keys = student.keys()
+# values = student.values()
+
+# print(keys)
+# print(values)
+# print(student.items())
+
+for key in student:
+    print(f"{key}: {student[key]}")
