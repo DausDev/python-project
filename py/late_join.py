@@ -28,17 +28,17 @@
 # JUMP TO WHERE THE CLASS IS CURRRENTLY AT, WHICH IS 09-dictionaries
 # 09-dictionaries
 
-student = {
-    "name": "Firdaus",
-    "age": 39,
-    "grade": "A",
-    "courses": ["Python", "LINUX", "micro python"]
-}
+# student = {
+#     "name": "Firdaus",
+#     "age": 39,
+#     "grade": "A",
+#     "courses": ["Python", "LINUX", "micro python"]
+# }
 
-# Accessing and modifying
+# # Accessing and modifying
 
-student["grade"] = "C"  # Update grade
-student["study method"] = "online bootcamp- jomhack" # Add new key-value pair
+# student["grade"] = "C"  # Update grade
+# student["study method"] = "online bootcamp- jomhack" # Add new key-value pair
 
 # print(student["name"])  # Output: Firdaus
 # print(student.get("courses")) # Output: ['Python', 'LINUX', 'micro python']
@@ -51,5 +51,23 @@ student["study method"] = "online bootcamp- jomhack" # Add new key-value pair
 # print(values)
 # print(student.items())
 
-for key in student:
-    print(f"{key}: {student[key]}")
+
+# # Iterating through the dictionary
+# for key in student:
+#     print(f"{key}: {student[key]}")
+
+# # this is the same as:
+# for key, value in student.items():
+#     print(f"{key}: {value}")
+
+STE = {
+    "JOB": {
+        "KLCC": {"done": 70, "pending": 30},
+        "Hijauan Kemensah": {"done": 60, "pending": 40}
+    },
+    "TOOLS": ["DRILL", "HAMMER", "SCREWDRIVER"]
+
+}
+# nested dictionary access is done by chaining keys together so to access the "done" value for KLCC, we can use:
+print(STE["JOB"]["KLCC"]["pending"]) # Output: 30
+# print(STE["TOOLS"]) # Output: ['DRILL', 'HAMMER', 'SCREWDRIVER']
