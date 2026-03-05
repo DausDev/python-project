@@ -5,6 +5,7 @@
 # mixed = ["hello", 42, 3.14, True]
 # empty_list = []
 
+
 # fruits.append("grape") #add an element to the end of the list
 # fruits.insert(1, "kiwi") #add an element at a specific index
 # fruits.remove("banana") #remove an element by value
@@ -60,14 +61,35 @@
 # for key, value in student.items():
 #     print(f"{key}: {value}")
 
-STE = {
-    "JOB": {
-        "KLCC": {"done": 70, "pending": 30},
-        "Hijauan Kemensah": {"done": 60, "pending": 40}
-    },
-    "TOOLS": ["DRILL", "HAMMER", "SCREWDRIVER"]
+# STE = {
+#     "JOB": {
+#         "KLCC": {"done": 70, "pending": 30},
+#         "Hijauan Kemensah": {"done": 60, "pending": 40}
+#     },
+#     "TOOLS": ["DRILL", "HAMMER", "SCREWDRIVER"]
+
+# }
+# nested dictionary access is done by chaining keys together so to access the "done" value for KLCC, we can use:
+# print(STE["JOB"]["KLCC"]["pending"]) # Output: 30
+# print(STE["TOOLS"]) # Output: ['DRILL', 'HAMMER', 'SCREWDRIVER']
+
+student_records = {
+    "student_001": {"name": "John",
+                    "age": 19,
+                    "major": "Computer Science",
+                    "grades": [85,92,78]},
+    "student_002": {"name": "Sarah",
+                    "age": 20,
+                    "major": "Biology",
+                    "grades": [90,88,95]},
+}
+student_records["student_003"] = {
+    "student_001": {"name": "Mike",
+                    "age": 18,
+                    "major": "Math",
+                    "grades": [82,79,91]},
+    print(info)
 
 }
-# nested dictionary access is done by chaining keys together so to access the "done" value for KLCC, we can use:
-print(STE["JOB"]["KLCC"]["pending"]) # Output: 30
-# print(STE["TOOLS"]) # Output: ['DRILL', 'HAMMER', 'SCREWDRIVER']
+# for student_id, info in student_records.items():
+    # print(f"Student ID: {student_id}, Name:{info["name"]}, Major:{info["major"]}")

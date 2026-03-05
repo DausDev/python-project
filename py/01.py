@@ -1,13 +1,13 @@
-# name = "daus" #String
-# age = 39 #Interger
-# weight = 70.5 #Float
-# is_male = True #Boolean
-# her_name = "Leha"
-# random_number = None #NoneType
-# rabbit = "animal"
+name = "adam" #String
+age = 39 #Interger
+weight = 70.5 #Float
+is_male = True #Boolean
+her_name = "Leha"
+random_number = None #NoneType
+rabbit = "animal"
 
 
-# print("What is the name:", name)
+print("What is the name:", name)
 # print(type(weight))
 # print(her_name)
 # print(type(random_number))
@@ -60,5 +60,5 @@
 # print(message_2)
 # print(message_3)
 
-test = "apa-apa sahaja yang aku perlu tulis disini."
-print(test)
+# test = "apa-apa sahaja yang aku perlu tulis disini."
+# print(test)
