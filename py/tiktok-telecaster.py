@@ -7,7 +7,7 @@
 PIN = "1234"
 
 def show_balance(balance):
-    print(f"Current Balance: RM{balance:.2f}")
+    print(f"Current Balance: RM{balance:,.2f}")
 
 def deposit_cash():
     cash = float(input("Enter amount to deposit: RM"))
@@ -22,6 +22,8 @@ def withdraw_cash (balance):
 
     if cash <= 0:
         print("Withdrawal must be more than RM0")
+    elif cash % 10 != 0:
+        print("withdrawal must be in gandaan RM10 BRO!")
         return 0
     if cash > balance:
         print("Insufficient balance")
@@ -34,7 +36,7 @@ while attempts > 0:
     pin = input("Enter PIN: ")
 
     if pin == PIN:
-        print("PIN accepted. Welcome!")
+        print("PIN accepted. Welcome DausDev!")
         break
     else:
         attempts -= 1
@@ -55,18 +57,18 @@ while choice != 4:
     print("3. Withdraw Cash")
     print("4. EXIT")
 
-    choice = int(input("Enter your choice: "))
+    choice = int(input("\nEnter your choice: "))
 
     if choice == 1:
         show_balance(balance)
     
     elif choice == 2:
         balance += deposit_cash()
-        print(f"New Balance: RM{balance:.2f}")
+        print(f"\nNew Balance: RM{balance:,.2f}")
 
     elif choice == 3:
         balance -= withdraw_cash(balance)
-        print(f"New Balance: RM{balance:.2f}")
+        print(f"\nNew Balance: RM{balance:,.2f}")
 
     elif choice == 4:
         print("Thx for using ATM Machine. Goodbye!")
